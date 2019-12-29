@@ -1,11 +1,13 @@
 module.exports = {
+  pathPrefix: "/blog",
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Helton's Blog`,
+    author: `Helton Carlos de Souza`,
+    description: `My personal blog. Tips and opinions about tech.`,
+    siteUrl: `https://helton.github.io/blog`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `h3170n`,
+      github: 'helton'
     },
   },
   plugins: [
@@ -40,7 +42,13 @@ module.exports = {
             },
           },
           `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: "static",
+              // ignoreFileExtensions: [],
+            }
+          },
           `gatsby-remark-smartypants`,
         ],
       },
@@ -50,20 +58,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-78966864-1`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Helton's Blog`,
+        short_name: `HeltonBlog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
