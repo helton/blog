@@ -2,7 +2,7 @@
 title: Express
 date: "2019-12-29T13:01:00.000Z"
 description: "Bringing Node.js to the next level"
-tags: ["express", "javascript", "library", "node"]
+tags: ["express", "javascript", "library", "node", "backend", "guide"]
 ---
 
 ExpressJS is a web application framework for NodeJS. It's minimal and flexible, great for building Web APIs.
@@ -119,7 +119,7 @@ app.get('/blocks-as-html', (req, res) => {
 });
 ```
 
-Of course, **this is just an example**. If you really need to do **server-side rendering** go for [ESJ](http://www.embeddedjs.com/), [Pug](https://pugjs.org/api/getting-started.html) (formerly *Jade*), [Handlebars](http://handlebarsjs.com/) ou any shinny template engine you like.
+Of course, **this is just an example**. If you really need to do **server-side rendering** go for [ESJ](http://www.embeddedjs.com/), [Pug](https://pugjs.org/api/getting-started.html) (formerly *Jade*), [Handlebars](http://handlebarsjs.com/) ou any shiny template engine you like.
 
 ## Redirecting
 

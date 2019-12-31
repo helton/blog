@@ -2,7 +2,7 @@
 title: Redux
 date: "2019-12-29T12:39:00.000Z"
 description: "The simplicity and power of this state management library"
-tags: ["redux", "javascript", "library"]
+tags: ["redux", "javascript", "library", "guide"]
 ---
 
 Once upon a time there was a couple of engineers at Facebook who weren't happy about their apps state control. The behaviour was unpredictable and it was hard do add new features to the codebase. So, they made Flux.
