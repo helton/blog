@@ -1,6 +1,7 @@
 ---
 title: Express
 date: "2019-12-29T13:01:00.000Z"
+updated: "2020-01-01T21:29:00.000Z"
 description: "Bringing Node.js to the next level"
 tags: ["express", "javascript", "library", "node", "backend", "guide"]
 ---
@@ -74,7 +75,7 @@ I didn't get it. What did we do exactly?
 
 ## Middleware
 
-Well, we defined a custom [middleware](http://expressjs.com/en/guide/writing-middleware.html). They're functions executed **sequentially** that access the **request**, **response** and the next **middleware**, being responsable to handle the response (or pass it to the other *middleware*). They are stacked into each other.
+Well, we defined a custom [middleware](https://expressjs.com/en/guide/writing-middleware.html). They're functions executed **sequentially** that access the **request**, **response** and the next **middleware**, being responsable to handle the response (or pass it to the other *middleware*). They are stacked into each other.
 
 Inside each middleware we can do things like:
 
@@ -90,7 +91,7 @@ Calling `next()` the middlware passes the control to the next middlware availabl
 
 ![Middleware Stack](./middleware-stack.png)
 
-For a more detailed explanation, take a look at: [Understanding expressjs middleware with a visual example](http://javascript.tutorialhorizon.com/2014/09/19/understanding-expressjs-middleware-with-a-visual-example/)
+For a more detailed explanation, take a look at: [Understanding expressjs middleware with a visual example](https://javascript.tutorialhorizon.com/2014/09/19/understanding-expressjs-middleware-with-a-visual-example/)
 
 I also borrowed the image below from the Express site itself. It helps to explain each middleware piece.
 
