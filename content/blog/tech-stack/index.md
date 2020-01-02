@@ -5,15 +5,15 @@ description: "What I use and recommend"
 tags: ["tech-radar", "stack"]
 ---
 
-We're surrounded by thousands of technologies to solve all of our problems. But the more they are more headache we have to pick one. Tech Radars are meant to help you with that, telling you what the market sees like a good tech to adopt, to try, to search about and to discard.
+We are surrounded by thousands of technologies to solve all of our problems. But the more they are more headache we have to pick one. Tech Radars are meant to help you with that, telling you what the market understands like good tech to adopt, to try, to search about, and to discard.
 
-This post is meant to be updated frequently and it'll show what techonologies **I use (or have used in the past years) and recommend**. By technology I mean: libraries, frameworks, languages and apps.
+This post will be updated frequently and it'll show what technologies **I use (or have used in the past years) and recommend**. What I mean by technology here are libraries, frameworks, languages, and apps.
 
-Take everything here with a grain of salt since it reflects what I think is good based on my own experience so far. I can change my mind and other technologies can appear to replace good old ones.
+Take everything here with a grain of salt since it reflects what I think is excellent based on my own experience so far. I can change my mind or other technologies can appear to replace good old ones.
 
-The order here is important. I'm not creating categories for libraries, tools, platforms and etc. I'm putting everything in the same place to keep it simple, since the list is not exhaustive. I might change my mind about that, we'll see.
+The order here is relevant. I'm not creating categories for libraries, tools, platforms, etc. I'm putting everything in the same place to keep it simple since the list is not exhaustive. I might change my mind about that, we'll see.
 
-What does the **status** column means in this list? It's probably a different approach compared to the original **TechRadar by ThoughtWorks**...
+What does the **status** column mean in this list? It's probably a different approach compared to the original **TechRadar by ThoughtWorks** ...
 
 Glad you asked, here we go:
 
@@ -46,6 +46,7 @@ Glad you asked, here we go:
 | Elm                | frontend       | Assess 🔎|
 | Skeleton           | frontend       | Assess 🔎|
 | Materialize        | frontend       | Assess 🔎|
+| PWA                | frontend       | Assess 🔎|
 | Flow               | frontend       | Hold   ❌|
 | Java               | backend        | Adopt  ✔️|
 | .NET Core          | backend        | Adopt  ✔️|
@@ -109,7 +110,7 @@ Glad you asked, here we go:
 | Adobe Photoshop    | UX, UI, design | Adopt  ✔️|
 | Figma              | UX, UI, design | Adopt  ✔️|
 | Procreate*         | UX, UI, design | Adopt  ✔️|
-| Afinnity Designer* | UX, UI, design | Adopt  ✔️|
+| Affinity Designer* | UX, UI, design | Adopt  ✔️|
 | Concepts*          | UX, UI, design | Adopt  ✔️|
 | Adobe Sketch*      | UX, UI, design | Trial  🧪|
 | Sketchbook*        | UX, UI, design | Trial  🧪|

@@ -16,7 +16,6 @@ It's also the foundation for other tools and frameworks, like *Kraken* and *Sail
 
 `yarn add express`
 
-
 ## Installing (via npm)
 
 `npm install express --save`
@@ -25,7 +24,7 @@ It's also the foundation for other tools and frameworks, like *Kraken* and *Sail
 
 Let's write our first Expression app.
 
-I'm gonna use ES6 features here because it's cool (and because I want to). To try it by yourself make sure you use [Babel](https://babeljs.io/) or anything that can transpile your code to ES5.
+I will use ES6 features here because it's cool (and because I want to). To try it by yourself make sure you use [Babel](https://babeljs.io/) or anything that can transpile your code to ES5.
 
 First, the boilerplate: importing stuff:
 
@@ -37,12 +36,12 @@ const app = express();
 Well, that's enough to get an `app` instance. Now let's define our single route. With that our server will be able to answer `http://localhost:<port>`
 
 ```javascript
-app.get('/', (req, res) => { 
+app.get('/', (req, res) => {
     res.send('Hello, World');
 });
 ```
 
-The `get` method provide a callback function, where we can access the **request** (`req`) and the **response** (`res`) parameters. These parameters inherit from [http.IncomingMessage](https://nodejs.org/api/http.html#http_class_http_incomingmessage) and [http.ServerResponse](https://nodejs.org/api/http.html#http_class_http_serverresponse) Node classes respectively, so we're able to access their methods as well. For instance, we can do:
+The `get` method provides a callback function, where we can access the **request** (`req`) and the **response** (`res`) parameters. These parameters inherit from [http.IncomingMessage](https://nodejs.org/api/http.html#http_class_http_incomingmessage) and [http.ServerResponse](https://nodejs.org/api/http.html#http_class_http_serverresponse) Node classes respectively, so we're able to access their methods as well. For instance, we can do:
 
 ```javascript
 app.get('/', (req, res) => {
@@ -51,13 +50,13 @@ app.get('/', (req, res) => {
 });
 ```
 
-Is that so? Not quite, we still need to tell it to listen some port:
+Is that so? Not quite, we still need to tell it to listen to some port:
 
 ```javascript
 app.listen(3000);
 ```
 
-What if I want to get some information to know if the server is really running? Well, you can attach a callback function when calling `listen`:
+What if I want to get some information to know if the server is running? Well, you can attach a callback function when calling `listen`:
 
 ```javascript
 const server = app.listen(3000, () => console.log('Server running at http://localhost:' + server.address().port));
@@ -75,7 +74,7 @@ I didn't get it. What did we do exactly?
 
 ## Middleware
 
-Well, we defined a custom [middleware](https://expressjs.com/en/guide/writing-middleware.html). They're functions executed **sequentially** that access the **request**, **response** and the next **middleware**, being responsable to handle the response (or pass it to the other *middleware*). They are stacked into each other.
+Well, we defined a custom [middleware](https://expressjs.com/en/guide/writing-middleware.html). They're functions executed **sequentially** that access the **request**, **response** and the next **middleware**, being responsible to handle the response (or pass it to the other *middleware*). They are stacked into each other.
 
 Inside each middleware we can do things like:
 
@@ -87,17 +86,17 @@ and so on...
 
 When a request comes in, it passes through each middleware before reaching the routes, like a plumbing pipe.
 
-Calling `next()` the middlware passes the control to the next middlware available in the stack to handle the request. Don't ~~ever ever~~ try to call `next()` after your response is completed (it'll cause **errors**, believe me).
+Calling `next()` the middleware passes the control to the next middleware available in the stack to handle the request. Don't ~~ever ever~~ try to call `next()` after your response is completed (it'll cause **errors**, believe me).
 
 ![Middleware Stack](./middleware-stack.png)
 
-For a more detailed explanation, take a look at: [Understanding expressjs middleware with a visual example](https://javascript.tutorialhorizon.com/2014/09/19/understanding-expressjs-middleware-with-a-visual-example/)
+For a more detailed explanation, take a look at [Understanding expressjs middleware with a visual example](https://javascript.tutorialhorizon.com/2014/09/19/understanding-expressjs-middleware-with-a-visual-example/)
 
 I also borrowed the image below from the Express site itself. It helps to explain each middleware piece.
 
 ![Express Middleware](./express-middleware-stack.png)
 
-So, you need a JSON as a result, right? Easy, just send a JavaScript object as response:
+So, you need a JSON as a result, right? Easy, just send a JavaScript object as a response:
 
 ```javascript
 app.get('/blocks-as-json', (req, res) => {
@@ -124,7 +123,7 @@ Of course, **this is just an example**. If you really need to do **server-side r
 
 ## Redirecting
 
-To redirecto to a relative path, use the `redirect` method available on `response` object:
+To redirect to a relative path, use the `redirect` method available on `response` object:
 
 ```javascript
 app.get('/i-will-not-be-here-for-a-while', (req, res) => {
@@ -132,7 +131,7 @@ app.get('/i-will-not-be-here-for-a-while', (req, res) => {
 });
 ```
 
-By default it'll respond with a **HTTP 302** status code (Moved Temporarly). In order to change it (to **HTTP 301** [Moved Permanently], for instance), pass it as the first parameter:
+By default, it'll respond with an **HTTP 302** status code (Moved Temporarily). To change it (to **HTTP 301** [Moved Permanently], for instance), pass it as the first parameter:
 
 ```javascript
 app.get('/i-am-definitely-not-here', (req, res) => {
@@ -142,7 +141,7 @@ app.get('/i-am-definitely-not-here', (req, res) => {
 
 ## Send files
 
-Suppose that we have a **index.html** file in a public folder that we want to serve at `/home`. How can we do it with Express? Piece of cake:
+Suppose that we have an **index.html** file in a public folder that we want to serve at `/home`. How can we do it with Express? Piece of cake:
 
 ```javascript
 app.get('/home', (req, res) => {
@@ -150,17 +149,17 @@ app.get('/home', (req, res) => {
 });
 ```
 
-Pay attention to the `__dirname`. It's necessary to correctly locate our **index.html** based on the current path. We could've use `./public/index.html` instead as well.
+Pay attention to the `__dirname`. It's necessary to locate our **index.html** based on the current path. We could've use `./public/index.html` instead as well.
 
 ## Send files with express.static
 
-We can also use the `express.static` middleware (the only **middleware** that's current shipped with Express) to do the job:
+We can also use the `express.static` middleware (the only **middleware** that's currently shipped with Express) to do the job:
 
 ```javascript
 app.use('/home', express.static(__dirname + '/public/index.html'));
 ```
 
-What if I have a bunch of files in the public direcetory? You don't expect me to reference one-by-one, don't you?
+What if I have a bunch of files in the public directory? You don't expect me to reference one-by-one, don't you?
 Of course not. Just tell `express.static` to **serves everything** under the specified folder:
 
 ```javascript

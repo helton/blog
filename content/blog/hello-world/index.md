@@ -6,6 +6,6 @@ description: "Hello, World!"
 
 Well, it's about time to have a blog where I can share things I'm learning, right?
 
-It'll be a good way to keep me motivated and also a resource to remember things I've been learning and things I've been through.
+It'll be an exciting way to keep me motivated and also a resource to remember things I've been learning and everything I've been using.
 
-Stay tuned to more content!
+Stay tuned for more content!

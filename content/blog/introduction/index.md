@@ -8,17 +8,17 @@ A while ago I've written an introduction to a book I was planning to release.
 
 A book about technology, the challenges, the motivations and what was going on under the hood.
 
-Nowadays I think it makes more sense to put it in a blog post, so here it goes:
+Nowadays, I think it makes more sense to put it in a blog post, so here it goes:
 
-> Every developer read tons of material nowadays, maybe too many. Sometimes is good to find a place where you can organize your thoughts, ideas and be able to run into it when you need it. How many times do you find yourself thinking: "Where did I read that? I can't remember... I should've wrote it down back there...". Believe me, that happens more frequently than we're willing to accept.
+> Every developer read tons of material nowadays, maybe too many. Sometimes is good to find a place where you can organize your thoughts, ideas and be able to run into it when you need it. How many times do you find yourself thinking: "Where did I read that? I can't remember... I should've written it down back there...". Believe me, that happens more frequently than we're willing to accept.
 
 > Well, that's this whole book idea. Really. I'll put any information that I find useful. If you find it too, share it, open an issue, I'll gladly review it.
 
-> My intention is to keep up to date with the new technologies and contents that are ~~thrown at~~ shown to us everyday.
+> My intention is to keep up to date with the new technologies, and contents that are ~~thrown at~~ shown to us every day.
 
-> I'll keep it simple as possible, attached to the core ideas and with useful snippets. Is the content still unclear? Well, pretty much everything that I read about programming (tools, concepts, ideas, etc). I know that the scope is really broad, but I've to start somewhere.
+> I'll keep it simple as possible, attached to the core ideas and with useful snippets. Is the content still unclear? Well, pretty much everything that I read about programming (tools, concepts, ideas, etc). I know that the scope is broad, but I've to start somewhere.
 
-> I think is interesting to share that writing something (a blog post, an note or even a book) is a good way to learn. Seriously. While we write, we put a lot of effort in organize our thoughts and express ourselves in a way that at least makes sense (I'm not sure if I succeeded the way I wanted).
+> I think is interesting to share that writing something (a blog post, a note or even a book) is a good way to learn. Seriously. While we write, we put a lot of effort in organize our thoughts and express ourselves in a way that at least makes sense (I'm not sure if I succeeded the way I wanted).
 
 > Since this book is about my notes and I'll keep learning as far and as much as I can, it'll never be finished.
 

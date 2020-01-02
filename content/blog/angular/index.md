@@ -5,13 +5,13 @@ description: "The Road to Angular"
 tags: ["angular", "javascript", "typescript", "framework", "frontend", "guide"]
 ---
 
-Angular is the shiny web frawork developed by Google. Over the couple of years it evolved a lot since its first version, called **AngularJS**, released in 2010. Angular 2+ is a complete rewrite of its first version.
+Angular is the shiny web framework developed by Google. Over a couple of years, it evolved a lot since its first version, called **AngularJS**, released in 2010. Angular 2+ is a complete rewrite of its first version.
 
 ## General structure
 
 **Modules** group components and services.
 
-**Components** are the building block of any Angular app, they control the view.
+**Components** are the building block of any Angular app. They control the view.
 
 **Services** provide the way to abstract business logic (usually fetch and process data).
 
@@ -43,11 +43,11 @@ A component is identified by the decorator `@Component` which has three properti
 
 ## Typescript
 
-[Typescript](https://www.typescriptlang.org/) is a superset of Javascript and it's widely used to develop Angular apps since it was officially adopted by Google on Angular 2.
+[Typescript](https://www.typescriptlang.org/) is a superset of Javascript, and it's widely used to develop Angular apps since it was officially adopted by Google on Angular 2.
 
 ## Modules
 
-Components and services are grouped in [modules](https://angular.io/guide/ngmodules). By default Angular don't scan your entire app to find all the components and services available to use. Angular look at the *module* you registered. All your custom components and services should be registered on `app.module.ts` on the `declaration` property.
+Components and services are grouped in [modules](https://angular.io/guide/ngmodules). By default Angular doesn't scan your entire app to find all the components and services available to use. Angular look at the *module* you registered. All your custom components and services should be registered on `app.module.ts` on the `declaration` property.
 
 ```typescript
 @NgModule({
@@ -63,11 +63,11 @@ export class AppModule { }
 Tips:
 
 - If you plan to use `ngModel` to have two-way data binding in forms remember to import [`FormsModule`](https://angular.io/api/forms/FormsModule) from `@angular/forms` and add it to your `app.module.ts`
-- If you plan to fetch data on your services remember to import [`HttpClientModule`](https://angular.io/api/common/http/HttpClientModule) from `@angular/common/http` and add it to your `app.module.ts`
+- If you plan to fetch data on your services, remember to import [`HttpClientModule`](https://angular.io/api/common/http/HttpClientModule) from `@angular/common/http` and add it to your `app.module.ts`
 
 ## Bootstrapping
 
-Every Angular app has a `index.html` file where you can find the root component(s) of your app. This component will be used to [boostrap](https://angular.io/guide/bootstrapping) the app and it should be registered in `app.module.ts` under `@NgModule` via `bootstrap` property:
+Every Angular app has an `index.html` file where you can find the root component(s) of your app. This component will be used to [boostrap](https://angular.io/guide/bootstrapping) the app and it should be registered in `app.module.ts` under `@NgModule` via `bootstrap` property:
 
 ```typescript
 @NgModule({
@@ -78,7 +78,7 @@ export class AppModule { }
 
 ```
 
-On the `main.ts` file you can see where the Angular is actually called to create and patch the DOM:
+On the `main.ts` file, you can see where the Angular is called to create and patch the DOM:
 
 ```typescript
 import { enableProdMode } from '@angular/core';
@@ -138,8 +138,7 @@ Some useful commands are:
 
 ## `angular.json`
 
-This file stores the general configuration of an Angular app. You usually touch this file to add new global CSS (like when using [Bootstrap](https://getbootstrap.com/), [Foundation](https://foundation.zurb.com/) or other framework)
-
+This file stores the general configuration of an Angular app. You usually touch this file to add new global CSS (like when using [Bootstrap](https://getbootstrap.com/), [Foundation](https://foundation.zurb.com/) or other frameworks)
 
 ## Versions
 

@@ -11,18 +11,19 @@ Some time later, Dan Abramov borrowed their ideas and made a better library: **R
 
 ## Setup
 
-### Installing Redux (via yarn):
+### Installing Redux (via yarn)
 
 `$ yarn add redux`
 
-### Installing Redux (via npm):
+### Installing Redux (via npm)
 
 `$ npm install redux --save`
 
 ### Using CDN
 
-If you want to use it directly on your view (html page), just put the redux.js (or redux.js.min) in your `<script>` tag.
+If you want to use it directly on your view (HTML page), just put the redux.js (or redux.js.min) in your `<script>` tag.
 There a few CDNs availables. Just some of them:
+
 - https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js
 - https://cdn.jsdelivr.net/npm/redux@4.0.5/lib/redux.min.js
 
@@ -49,17 +50,18 @@ Remember to put only the minimal amount of information into the action object, j
 Example:
 
 ```javascript
-let action = { 
+let action = {
     type: "CHANGE_NAME",
-    data: { 
+    data: {
         id: 0,
         name: 'Helton'
     }
 }
 ```
+
 This approach scales well to medium and large applications.
 
-### c) Reducers handle state mutation through actions ((state, action) => new state!)
+### c) Reducers handle state mutation through actions (*(state, action) => new state!*)
 
 Reducers are functions that take the previous **state** of the application and the **action** being dispatched and returns the next **state**. It can't modify the current state, it should return a brand new object (the function should be pure). And no, it won't be slow!
 
@@ -93,6 +95,7 @@ import { createStore } from 'redux';
 ```
 
 - Create a local store passing as argument the reducer previously created:
+
 ```javascript
 const store = createStore(counter);
 ```
